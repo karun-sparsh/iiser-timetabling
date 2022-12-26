@@ -21,6 +21,16 @@ greedy = colors_groups(greedy);
 merge = data_k_merge(data, n);
 % each row is a group.
 
+%% enum is the grouping obtained by using enum merge algorithm.
+enum = adj_data_k_colors(adj, data, n);
+% each row is a group.
+
+%% enum2 is the grouping obtained by using enum2 merge algorithm.
+enum2 = adj_data_k_colors2(adj, data, n);
+% each row is a group.
+
 %% dtf is distance from fesibility, or simply dis-satisfaction.
 % lower the better.
 dtf_merge = colors_adj_dtf(merge, adj);
+dtf_enum = colors_adj_dtf(enum, adj);
+dtf_enum2 = colors_adj_dtf(enum2, adj);
