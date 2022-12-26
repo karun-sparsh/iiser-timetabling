@@ -1,6 +1,8 @@
 %% iiser-timetabling
 %% MATLAB files for the timetabling problem, grouping of courses using a modified version of greedy colouring.
 
+%% n is desired number of groups.
+
 %% data is a matrix in which rows represent students while columns represent courses.
 % data(i, j) = 1 if student 'i' has chosen course 'j' and 0 otherwise.
 
@@ -22,5 +24,3 @@ merge = data_k_merge(data, n);
 %% dtf is distance from fesibility, or simply dis-satisfaction.
 % lower the better.
 dtf_merge = colors_adj_dtf(merge, adj);
-
-clear n;
