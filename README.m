@@ -29,7 +29,7 @@ enum = adj_data_k_colors(adj, data, n);
 enum2 = adj_data_k_colors2(adj, data, n);
 % each row is a group.
 
-%% dtf is distance from fesibility, or simply dis-satisfaction.
+%% dtf is distance to fesibility, or simply dis-satisfaction.
 % lower the better.
 dtf_merge = colors_adj_dtf(merge, adj);
 dtf_enum = colors_adj_dtf(enum, adj);
